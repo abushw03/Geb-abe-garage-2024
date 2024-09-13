@@ -1,0 +1,157 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+  font-family: 'Times New Roman', Times, serif;
+  transition: all 1s ease-in-out;
+}
+
+.shrink {
+  transform: scale(0);
+  opacity: 0;
+}
+
+.profileContainer {
+  width: 90%; /* Increase width to 90% of the viewport */
+  max-width: 1150px; /* Set a maximum width for large screens */
+  margin: 0 auto; /* Center the container */
+  padding: 20px 30px; /* Adjust padding */
+}
+
+.titlediv {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  color: #0b1a51; /* Dark Blue color */
+  font-weight: 700;
+  margin-bottom: 10px;
+margin-top: -60px;
+margin-right: 15px;
+}
+
+.titleUnderline {
+  width: 100px;
+  height: 4px;
+  background-color: darkorange;
+  margin-bottom: 30px;
+  margin-top: 42px;
+}
+
+.customerInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.customerDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.customerName {
+  font-size: 1.5rem;
+  color: #0b1a51;
+  margin-bottom: 10px;
+}
+
+.detail {
+  font-size: 1rem;
+  color: black;
+  margin: 3px 0;
+}
+
+.editContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.editIcon {
+  font-size: 1.2rem;
+  color: darkorange;
+  margin-right: 5px;
+}
+
+.removeIcon {
+  font-size: 1.5rem;
+  color:white;
+  background-color: red;
+  cursor: pointer;
+  margin-top: -140px;
+  font-size: 25px;
+}
+
+.vehicleSection {
+  width: 100%;
+}
+
+.vehicleTitle {
+  font-size: 1.5rem;
+  color: #0b1a51;
+  margin-bottom: 15px;
+}
+
+.vehicleTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vehicleTable th,
+.vehicleTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.vehicleTable th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.chooseIcon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #ff8c00;
+  text-align: center;
+}
+
+.chooseIcon:hover {
+  color: #e07b00;
+}
+
+.noData {
+  color: #888;
+  font-size: 1rem;
+  padding: 20px 10px;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.errorMessage {
+  color: red; /* You can change the color as needed */
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,14 @@
+.container {
+  min-height: 100vh; /* Full height */
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  margin: 0 auto; /* Ensures the container is centered horizontally */
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+}

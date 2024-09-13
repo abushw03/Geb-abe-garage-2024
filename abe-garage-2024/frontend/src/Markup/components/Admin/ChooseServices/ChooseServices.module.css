@@ -1,0 +1,184 @@
+.chooseServiceContainer {
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1100px; /* Set the maximum width to control the container size */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left; /* Align title to the left */
+}
+
+.titleUnderline {
+  display: inline-block;
+  width: 90px;
+  height: 3px;
+  background-color: darkorange;
+  margin-left: 10px;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.serviceItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.serviceItem:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.serviceInfo {
+  flex-grow: 1;
+}
+
+.serviceName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.serviceDescription {
+  font-size: 1.2rem;
+  color: black;
+  margin: 5px 0 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.serviceCheckbox {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  transform: scale(2.2); /* Adjusted scale for a larger but not overwhelming checkbox size */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  padding: 8px;
+  border: 2.2px solid darkorange;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 350px;
+  align-self: flex-end;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.paginationButton {
+  padding: 8px 16px;
+  border: 2px solid darkorange;
+  background-color:darkorange;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+.paginationButton:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.pageNumber {
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: black;
+}
+
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.submitButton {
+  padding: 12px 20px;
+  background-color: darkorange;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  width: 15%; /* Make the submit button take the full width */
+  margin-left: 450px;
+  margin-bottom: 30px;
+}
+.error {
+  color: red;
+  font-size: 1.3rem;
+ margin-bottom: 15px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 768px) {
+  .serviceItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .searchInput {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .submitButton {
+    width: 100%; /* Ensure the button is full-width on small screens */
+  }
+}

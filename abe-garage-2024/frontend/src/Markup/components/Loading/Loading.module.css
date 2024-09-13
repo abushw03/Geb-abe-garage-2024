@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex; /* Uses flexbox layout to arrange child elements */
+  justify-content: center; /* Horizontally centers child elements */
+  align-items: center; /* Vertically centers child elements */
+  height: 120vh; /* Sets the height to 100% of the viewport height */
+  background-color: #fff; /* Sets the background color to white */
+}
+
+.wrapper img {
+  width: 60px; /* Sets the width of the image to 50 pixels */
+  opacity: 0.8; /* Makes the image slightly transparent */
+}

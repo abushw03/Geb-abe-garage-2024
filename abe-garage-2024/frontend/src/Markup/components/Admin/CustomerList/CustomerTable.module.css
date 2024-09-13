@@ -1,0 +1,132 @@
+
+.container {
+  display: flex;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+}
+
+.contentContainer {
+  flex: 1;
+  padding: 40px;
+  width: 1200px;
+  font-family: 'Times New Roman', Times, serif;
+  max-width: 90%;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #2d3748;
+  margin-bottom: 20px;
+  margin-top: -70px;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+
+.table thead {
+  background-color: #ff8c00;
+  color: #ffffff;
+}
+
+.table thead th {
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.table tbody tr {
+  background-color: #ffffff;
+  transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.table tbody td button {
+  color: #ffffff;
+  background-color: #ff8c00;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-right: 5px;
+}
+
+.table tbody td button:hover {
+  background-color: #e07b00;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-item.disabled .page-link {
+  background-color: #dddddd;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+.page-item.active .page-link {
+  background-color: #ff8c00;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.page-link {
+  color: #ffffff;
+  background-color: #ff8c00;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.page-link:hover {
+  background-color: #e07b00;
+}
+
+.page-item span {
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin: 0 5px;
+}
+
+.page-item.disabled::marker {
+  display: none;
+}
+

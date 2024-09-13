@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+   background-color: #f5f5f5;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+}
+.serviceListContainer {
+  flex-grow: 1; /* Make the ServiceList take up remaining space */
+  padding: 20px; /* Add padding around the service list */
+  background-color: #f9f9f9; /* Background color for the service list area */
+}
+
+.serviceItem {
+  border-bottom: 1px solid #ddd; /* Add a border between service items */
+  padding: 10px 0; /* Add padding around service items */
+}
+
+.serviceItem:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+.serviceInfo h4 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #333;
+}
+
+.serviceInfo p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+.checkbox {
+  margin-left: 10px;
+  transform: scale(1.2); /* Increase the size of the checkbox */
+}

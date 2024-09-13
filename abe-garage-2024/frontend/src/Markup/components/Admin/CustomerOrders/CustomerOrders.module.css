@@ -1,0 +1,178 @@
+.ordersContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f2d3d;
+  margin-bottom: 20px;
+margin-top: -10px;
+}
+
+.titleUnderline {
+  display: inline-block;
+  width: 70px;
+  height: 3px;
+  background-color: darkorange;
+  margin-left: 10px;
+  margin-top: 10px;
+  vertical-align: middle;
+}
+
+.ordersTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.ordersTable th,
+.ordersTable td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+}
+
+.ordersTable th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.ordersTable td {
+  background-color: #fafafa;
+}
+
+.statusYellow,
+.statusGreen,
+.statusInProgress {
+  display: inline-block;
+  padding: 5px 5px;
+  text-align: center;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 125px;
+}
+
+.statusYellow {
+  background-color: #ffc107; /* Yellow for "Parts Ordered" */
+}
+
+.statusGreen {
+  background-color: #28a745; /* Green for "Waiting for Customer", "Ready for Pickup", "Picked Up" */
+}
+
+.statusInProgress {
+  background-color: #17a2b8; /* Default in-progress color */
+}
+
+.viewEdit {
+  display: flex;
+  gap: 25px;
+}
+
+.viewEdit a {
+  color: darkorange;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.viewEdit a:hover {
+  color: #007bff;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #007bff;
+}
+
+.deleteIcon {
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 23px;
+ margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.deleteIcon:hover {
+  color: #c0392b;
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.paginationButton {
+  padding: 8px 16px;
+  border: none;
+  background-color: darkorange;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+
+.paginationButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pageNumber {
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.searchInput {
+  padding: 8px;
+  border: 2.2px solid darkorange;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 350px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ordersTable th,
+  .ordersTable td {
+    padding: 8px 10px;
+  }
+
+  .viewEdit a,
+  .deleteIcon {
+    font-size: 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 20px;
+  }
+}

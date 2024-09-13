@@ -1,0 +1,249 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Sets a default font family for the entire document */
+}
+
+/* Footer main container styling */
+.mainFooter {
+  background-color: rgb(1, 1, 23); /* Dark background color */
+  color: #FFFFFF; /* White text color */
+  margin-bottom: 0px; /* Remove margin at the bottom */
+}
+
+/* Upper section of the footer */
+.upperBox {
+  padding: 20px 0; /* Padding at the top and bottom */
+}
+
+/* Container styling */
+.container {
+  max-width: 1200px; /* Max width of the container */
+  margin: 0 auto; /* Center align the container */
+  padding: 0 15px; /* Padding on the left and right */
+}
+
+/* Row layout */
+.row {
+  display: flex; /* Flexbox layout for rows */
+  justify-content: space-between; /* Space between items */
+  flex-wrap: wrap; /* Allow items to wrap onto the next line if necessary */
+}
+
+/* Column layout */
+.col {
+  flex: 1; /* Make columns flexible */
+  padding: 0 15px; /* Padding on the left and right of each column */
+}
+
+/* Footer information box styling */
+.footerInfoBox {
+  display: flex; /* Flexbox layout for info boxes */
+  justify-content: flex-start; /* Align items to the start */
+  align-items: center; /* Align items vertically centered */
+  font-weight: bold; /* Bold text */
+}
+
+/* Inner content styling */
+.infoInner {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Align items vertically centered */
+}
+
+.content {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange items in a column */
+}
+
+.icon {
+  margin-right: 10px; /* Space to the right of the icon */
+  font-size: 20px; /* Icon size */
+}
+
+.text {
+  font-size: 14px; /* Font size for text */
+  font-family: 'Times New Roman', Times, serif; /* Font family for text */
+}
+
+/* Link styling */
+a {
+  color: #FFFFFF; /* White color for links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Widgets section styling */
+.widgetsSection {
+  padding: 40px 0; /* Padding at the top and bottom */
+}
+
+/* Footer column styling */
+.footerColumn {
+  margin-bottom: 30px; /* Space below each footer column */
+}
+
+/* About widget styling */
+.widgetAbout {
+  margin-top: 20px; /* Space at the top */
+}
+
+/* Widget title styling */
+.widgetTitle {
+  font-size: 16px; /* Font size for widget titles */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 15px; /* Space below the title */
+  font-family: 'Times New Roman', Times, serif; /* Font family for titles */
+}
+
+/* List styling */
+.list {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  margin-bottom: 10px; /* Space below each list item */
+}
+
+.list li a {
+  font-size: 14px; /* Font size for list item links */
+  color: #FFFFFF; /* White color for links */
+  transition: color 0.3s; /* Smooth transition for color change */
+  font-family: 'Times New Roman', Times, serif; /* Font family for list items */
+}
+
+.list li a:hover {
+  color: #FF6A00; /* Orange color on hover */
+}
+
+/* Newsletter widget styling */
+.widgetNewsletter .newsletterForm {
+  margin-top: 20px; /* Space at the top of the form */
+}
+
+/* Form group styling */
+.formGroup {
+  display: flex; /* Flexbox layout for form groups */
+  align-items: center; /* Align items vertically centered */
+}
+
+.formGroup input {
+  padding: 11px; /* Padding inside the input field */
+  border: none; /* Remove border */
+  flex: 1; /* Make the input flexible */
+}
+
+/* Submit button styling */
+.themeBtn {
+  background-color: darkorange; /* darkorange background color */
+  color: #FFFFFF; /* White text color */
+  padding: 4.5px; /* Padding inside the button */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 25px; /* Font size for the button */
+}
+
+.themeBtn:hover {
+  background-color: darkorange; /* Dark orange background on hover */
+}
+
+/* Footer bottom section styling */
+.footerBottom {
+  display: flex; /* Flexbox layout for footer bottom */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Align items vertically centered */
+  padding: 20px 15px; /* Padding on the left and right */
+}
+
+/* Social links styling */
+.socialLinks {
+  display: flex; /* Flexbox layout for social links */
+  gap: 18px; /* Space between social icons */
+  justify-content: center; /* Center the icons */
+  margin-top: 20px; /* Space above the icons */
+}
+
+.socialLinks a {
+  display: flex; /* Flexbox layout for social link items */
+  align-items: center; /* Align icons vertically centered */
+  justify-content: center; /* Center align icons */
+  width: 40px; /* Set width of the circle */
+  height: 40px; /* Set height of the circle */
+  background-color: #FFFFFF; /* White background for the circle */
+  color: #1A1A3B; /* Color of the icons */
+  border-radius: 50%; /* Make it a circle */
+  font-size: 22px; /* Adjust icon size */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.socialLinks a:hover {
+  background-color: #1A1A3B; /* Dark background on hover */
+  color: white; /* White icon color on hover */
+}
+
+/* Responsive Design */
+
+/* Medium Screens (Tablets, smaller laptops) */
+@media (max-width: 991px) {
+  .footerInfoBox, .footerColumn {
+    flex-basis: 50%; /* Two columns on medium screens */
+  }
+
+  .socialLinks {
+    margin-top: 20px; /* Add spacing above social links */
+    margin-bottom: 20px; /* Add spacing below social links */
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center align text */
+  }
+}
+
+/* Small Screens (Tablets and smaller devices) */
+@media (max-width: 767px) {
+  .footerInfoBox, .footerColumn {
+    flex-basis: 100%; /* Full width on small screens */
+    margin-bottom: 20px; /* Add space below each column */
+  }
+
+  .socialLinks {
+    margin-top: 10px; /* Reduce spacing above social links */
+    margin-bottom: 10px; /* Reduce spacing below social links */
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    padding: 15px 10px; /* Adjust padding for small screens */
+  }
+}
+
+/* Extra Small Screens (Mobile devices) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px; /* Reduce container padding */
+  }
+
+  .footerInfoBox, .footerColumn {
+    margin-bottom: 15px; /* Add space below each column */
+  }
+
+  .footerBottom {
+    padding: 10px; /* Reduce padding for footer bottom */
+  }
+
+  .socialLinks {
+    gap: 12px; /* Reduce space between social icons */
+  }
+
+  .formGroup input {
+    padding: 8px; /* Reduce padding inside the input field */
+  }
+}

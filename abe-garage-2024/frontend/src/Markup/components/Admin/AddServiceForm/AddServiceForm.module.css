@@ -1,0 +1,108 @@
+/* AddServiceForm.module.css */
+
+.container {
+  margin-top: 5px;
+  background-color: #f5f5f5;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+}
+
+.formContainer {
+  width: 650px; /* Fixed width for the form */
+   transform: translate(50%, 0%); /* Center the form */
+  top:40%;
+  padding: 30px;
+align-items: center;
+  background-color: #ffffff;
+  font-family: 'Times New Roman', Times, serif; /* Set the font family */
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #1a202c;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center; /* Center the title text */
+}
+.titleUnderline {
+  display: inline-block;
+  width: 90px;
+  height: 4px;
+  background-color: darkorange;
+  margin-left: 10px;
+}
+.serviceForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 1rem;
+  color: #2d3748;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 2.2px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #2d3748;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #2d3748;
+  font-family: 'Times New Roman', Times, serif;
+  resize: vertical;
+}
+
+.submitButton {
+  padding: 12px;
+  background-color: darkorange;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  align-self: flex-center; /* Align the button to the center */
+}
+.successMessage {
+  color: green;;
+font-size: 20px;
+margin-top: -15px;
+font-weight: bold;
+font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.errorMessage {
+  color: red;
+  background-color: #f8d7da;
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}

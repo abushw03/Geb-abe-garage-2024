@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+   background-color: #f5f5f5;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 70px;
+}
+.titlediv{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title {
+  font-size: 2rem;
+  color: #0b1a51; /* Dark Blue color */
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.titleUnderline {
+  width: 100px;
+  height: 4px;
+  background-color: darkorange; /* Red color */
+  margin-bottom: 80px;
+  margin-top: -20px;
+  margin-left: 270px;
+}
+
+
+.searchContainer {
+  width: 100%;
+  align-items: center;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+
+.table thead {
+  color:black;
+  font-weight: bold;
+}
+
+.table thead th {
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.table tbody tr {
+  background-color: #ffffff;
+  transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.pointerIcon {
+  color: #ff8c00;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.pointerIcon:hover {
+  color: #e07b00;
+}
+
+.noResults {
+  font-size: 1rem;
+  color: #2d3748;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.addButton {
+  padding: 8px 20px;
+  background-color:darkorange;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  align-items: center;
+}
+

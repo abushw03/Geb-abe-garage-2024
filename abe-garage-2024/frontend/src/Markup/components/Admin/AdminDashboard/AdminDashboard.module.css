@@ -1,0 +1,144 @@
+
+.dashboardContainer {
+  flex: 1;
+  padding: 60px;
+  background-color: #f5f5f5;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+  background-size: cover;
+  font-family: 'Times New Roman', Times, serif;
+}
+.dashboardTitle {
+  font-size: 1.8rem;
+  color:black;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  margin-top: -110px;
+}
+
+.dashboardDescription {
+  font-size: 1.1rem;
+  color:black;
+  margin-bottom: 10px;
+  margin-top: -10px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.autoContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+   background-color: #f5f5f5;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+  background-size: cover;
+  font-family: 'Times New Roman', Times, serif;
+}
+.header {
+  display: flex; /* Use flexbox to layout header contents */
+  align-items: center; /* Align items vertically in the center */
+  margin-bottom: 15px; /* Add space below the header */
+}
+.greenLine {
+  width: 1.5cm; /* Set width of the darkorange line */
+  height: 2.5px; /* Set height of the darkorange line */
+  background-color: darkorange; /* Set background color to darkorange */
+  margin-top: -35px; /* Add space above the darkorange line */
+  margin-left: 10px; /* Add space to the left of the darkorange line */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.serviceBlockOne {
+  width: 30%;
+  margin-bottom: -28px;
+  height: 200px;
+   background-color: #f5f5f5;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 0.3px,
+    transparent 8px
+  );
+  background-size: cover;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.innerBox {
+  background-color: #fff;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  border-bottom: 4px solid darkorange;
+
+}
+
+.innerBox:hover {
+  border-color: #0d1b2a;
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.innerBox h5 {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 5px;
+  margin-top: 7px;
+  text-transform: uppercase;
+}
+
+.innerBox h2 {
+  font-size: 24px;
+  color: #0d1b2a;
+  margin-bottom: 25px;
+  margin-top: -40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.innerBox .readMore {
+  font-size: 14px;
+  color: darkorange;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.innerBox .readMore:hover {
+  text-decoration: underline;
+}
+
+.innerBox .icon {
+  font-size: 40px;
+  color: darkorange;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+@media (max-width: 768px) {
+  .serviceBlockOne {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .serviceBlockOne {
+    width: 100%;
+  }
+}

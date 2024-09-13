@@ -1,0 +1,147 @@
+.serviceListContainer {
+  padding: 0 40px;
+  width: 100%;
+  max-width: 1150px; /* Increased the max-width for a wider container */
+  margin: 0 auto; /* Center the container */
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left; /* Align title to the left */
+}
+
+.titleUnderline {
+  display: inline-block;
+  width: 90px;
+  height: 3px;
+  background-color: darkorange;
+  margin-left: 10px;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: black;
+}
+
+.serviceItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.serviceItem:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.serviceInfo {
+  flex-grow: 1.1;
+}
+
+.serviceName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.serviceDescription {
+  font-size: 1.2rem;
+  color: black;
+  margin: 5px 0 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.serviceIcons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: darkorange;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: darkorange;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: darkorange;
+}
+
+/* Search bar styling similar to customers page */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  padding: 10px;
+  border: 2.2px solid darkorange;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 350px;
+  color: black;
+  align-self: flex-end;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.paginationButton {
+  padding: 8px 16px;
+  border: none;
+  background-color: darkorange;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.paginationButton:hover {
+  background-color: #ff9800;
+}
+
+.paginationButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pageNumber {
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .serviceItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .searchInput {
+    width: 200px;
+  }
+}
